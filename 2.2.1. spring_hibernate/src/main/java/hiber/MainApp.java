@@ -6,9 +6,7 @@ import hiber.model.User;
 import hiber.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import javax.persistence.NoResultException;
 import java.sql.SQLException;
-import java.util.List;
 
 public class MainApp {
    public static void main(String[] args) throws SQLException {
@@ -42,9 +40,8 @@ public class MainApp {
          System.out.println(" ");
       }
 
-      System.out.println(userService.getUserByCar("Audi", 2003));
+      System.out.println(userService.getUserByCar("Kia", 2019));
       System.out.println(" ");
-
 
       context.close();
    }
